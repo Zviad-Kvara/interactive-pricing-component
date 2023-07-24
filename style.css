@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  font-family: "Manrope", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8.8rem 2.4rem;
+  background-image: url("./pattern-circles.svg"), url("./bg-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 5.7rem center, top left;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-txt {
+  color: #293356;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.header-paragraph {
+  width: 18.9rem;
+  color: #848ead;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2.3rem;
+  margin-top: 0.8rem;
+}
+main {
+  margin-top: 6.4rem;
+  margin-bottom: 8.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+  width: 327px;
+}
+.price-viewers-div {
+}
+.pageviews-paragraph {
+  padding-top: 3.4rem;
+  color: #848ead;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.1714rem;
+  text-transform: uppercase;
+}
+#my-range {
+  -webkit-appearance: none;
+  height: 0.8rem;
+  background: linear-gradient(
+    to right,
+    rgba(164, 243, 235, 1) 0%,
+    rgb(165, 243, 235) 50%,
+    rgb(234, 238, 251) 50%,
+    rgb(234, 238, 251) 100%
+  );
+  width: 27.9rem;
+  border-radius: 0.5rem;
+  margin-top: 2.5rem;
+}
+#my-range::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgba(16, 216, 196, 1);
+  background-image: url("./icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+#my-range::-moz-range-thumb:hover {
+  cursor: pointer;
+  background-color: #7aeadf;
+}
+/* for other browsers */
+#my-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgba(16, 216, 196, 1);
+  background-image: url("./icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.checkbox-div {
+  position: relative;
+}
+.toggle-slider {
+  height: 2.2rem;
+  width: 4.3rem;
+  background: rgba(207, 216, 239, 1);
+  border-radius: 2.5rem;
+  margin: 0 1.2rem;
+  cursor: pointer;
+}
+/* #toggle::before {
+  content: " ";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+} */
+#toggle {
+  height: 2.2rem;
+  width: 4.3rem;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#toggle:checked + .toggle-slider {
+  background: red;
+}
+
+.price {
+  color: #293356;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -0.08rem;
+  margin-top: 2.4rem;
+}
+span {
+  color: #848ead;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.billing {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3.4rem;
+}
+.monthly-billing-paragraph {
+  color: #848ead;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.billing-percent {
+  display: flex;
+  gap: 1.2rem;
+}
+.early-billing-paragraph {
+  color: #848ead;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.percent {
+  width: 4.1rem;
+  height: 1.9rem;
+  border-radius: 0.95rem;
+  background: #feede8;
+  color: #ff8d68;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+}
+.rectangle {
+  width: 327px;
+  height: 1px;
+  background: #ecf0fb;
+  margin-top: 3.8rem;
+  margin-bottom: 2.4rem;
+}
+section {
+}
+.websites-paragraph {
+  color: #848ead;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.check-icon {
+  margin-right: 1.6rem;
+}
+.data-paragraph {
+  color: #848ead;
+  margin-top: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.email-paragraph {
+  color: #848ead;
+  margin-top: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 2.8rem;
+}
+.start-btn {
+  margin-top: 3.3rem;
+  width: 170px;
+  height: 41px;
+  border-radius: 20.5px;
+  background: #293356;
+  border: none;
+  margin-bottom: 3.2rem;
+  color: #becdff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.start-btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ------------------------Desktop Version------------ */
+@media screen and (min-width: 1440) {
+}

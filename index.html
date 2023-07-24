@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon-32x32.png" />
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor|Interactive Pricing Component</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-txt">Simple, traffic-based pricing</h1>
+      <p class="header-paragraph">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+    <main>
+      <div class="price-viewers-div">
+        <p class="pageviews-paragraph">100K PAGEVIEWS</p>
+        <div class="slide-container">
+          <input id="my-range" type="range" />
+        </div>
+        <div class="price">$16.00 <span>/ month</span></div>
+      </div>
+      <div class="billing">
+        <p class="monthly-billing-paragraph">Monthly Billing</p>
+        <div class="checkbox-div">
+          <input type="checkbox" id="toggle" />
+          <div class="toggle-slider"></div>
+        </div>
+        <div class="billing-percent">
+          <p class="early-billing-paragraph">Yearly Billing</p>
+          <button class="percent">-25%</button>
+        </div>
+      </div>
+      <div class="rectangle"></div>
+      <section>
+        <p class="websites-paragraph">
+          <img src="./icon-check.svg" alt="check-icon" class="check-icon" />
+          Unlimited websites
+        </p>
+        <p class="data-paragraph">
+          <img src="./icon-check.svg" alt="check-icon" class="check-icon" />
+          100% data ownership
+        </p>
+        <p class="email-paragraph">
+          <img src="./icon-check.svg" alt="check-icon" class="check-icon" />
+          Email reports
+        </p>
+        <button class="start-btn">Start my trial</button>
+      </section>
+    </main>
+  </body>
+</html>
